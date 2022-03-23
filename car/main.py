@@ -25,4 +25,4 @@ def read_car(db: Session = Depends(get_db), skip: int = 0, limit: int = 10):
 @app.post("/create", response_model=schemas.Car)
 def create_car(car: schemas.CarModel, db: Session = Depends(get_db)):
     return crud.add_car(db=db, car=car)
-# 123
+# 12334
